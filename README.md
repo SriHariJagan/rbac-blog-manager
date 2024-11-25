@@ -69,3 +69,17 @@ An interactive Role-Based Access Control (RBAC) system built with React, designe
 3. **Run the development server:**
    ```bash
    npm start
+
+
+## Sample Images:
+
+![image](https://github.com/user-attachments/assets/0dda4f9b-4696-41b8-b622-7baefee65534)
+
+
+![image](https://github.com/user-attachments/assets/174b6a75-5ba6-4c6e-898a-50b68fe2f871)
+
+
+![image](https://github.com/user-attachments/assets/49f64bb3-dce7-4ffd-afb1-73bd0121d724)
+
+
+
