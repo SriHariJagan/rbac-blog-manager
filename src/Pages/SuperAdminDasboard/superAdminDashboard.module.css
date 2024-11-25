@@ -1,0 +1,22 @@
+.dashboardContainer {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .tableContainer {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.497);
+    overflow-x: auto;
+    padding: 20px;
+  }
+  

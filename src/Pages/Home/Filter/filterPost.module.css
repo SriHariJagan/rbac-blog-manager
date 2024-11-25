@@ -1,0 +1,82 @@
+/* FilterPosts.module.css */
+.filterContainer {
+  display: flex;
+  height: 100%;
+}
+
+.filterContainer .select {
+  outline: none;
+  border: none;
+  padding: 8px 4px;
+  border-radius: 6px;
+  background-color: #fdbb5984;
+  color: rgb(67, 66, 66);
+  font-weight: 500;
+  font-family: math;
+  margin-right: 4px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #d18007;
+}
+
+.filterContainer .input {
+  outline: none;
+  border: 1px solid #666666;
+  padding: 2px 4px;
+  border-radius: 6px;
+  margin: 0 6px;
+  background-color: #c8d0c95e;
+  font-family: math;
+  font-size: 18px;
+  width: 160px;
+}
+
+.filterContainer .input::placeholder{
+  font-size: 16px;
+}
+
+.filterContainer .filterButton {
+  outline: none;
+  border: none;
+  font-family: math;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background-color: #82f888;
+  border: 1px solid #0b9f12;
+  margin-left: 4px;
+  color: #147b1a;
+  cursor: pointer;
+}
+
+.filterButton:hover {
+  background-color: #bdfec1;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+@media (max-width: 500px){
+  .filterContainer {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .filterContainer .select {
+    margin-bottom: 5px;
+    padding: 8px 0px;
+    width: 120px;
+  }
+
+  .filterContainer .input {
+    margin: 4px 0;
+    padding: 8px 8px;
+  }
+
+  .filterContainer .filterButton {
+    margin-top: 5px;
+    width: 100px;
+    padding: 8px 2px;
+  }
+}

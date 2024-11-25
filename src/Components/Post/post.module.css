@@ -1,0 +1,170 @@
+/* General Post Container Styles */
+.postContainer {
+  width: 350px;
+  min-height: 230px;
+  max-height: 320px;
+  background-color: rgba(255, 255, 255, 0.779);
+  padding: 15px 12px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.492);
+  margin: 15px 0;
+  transition: 300ms;
+  position: relative;
+}
+
+.userName {
+  position: absolute;
+  right: 12px;
+  top: 5px;
+  font-size: 12px;
+  color: rgb(127, 96, 159);
+}
+
+.userName b {
+  font-family: math;
+  color: rgb(112, 111, 112);
+}
+
+.postContainer:hover {
+  scale: 1.02;
+}
+
+.postTitle {
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+
+.postTitle h2 {
+  font-size: math;
+  font-size: 18px;
+  color: rgb(251, 194, 23);
+}
+
+.postTitle p {
+  margin: 4px 0;
+  margin-left: 12px;
+  font-size: 24px;
+  font-family: serif;
+
+  overflow: hidden;
+
+  color: rgb(0, 34, 159);
+}
+
+.postDescription {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.postDescription h3 {
+  font-size: math;
+  font-size: 16px;
+  color: rgba(255, 227, 69, 0.99);
+  margin-bottom: 2px;
+}
+
+.postDescription p {
+  color: rgb(55, 55, 55);
+  /* margin: 0 8px; */
+  padding: 0 10px;
+  margin-top: 4px;
+  text-indent: 30px;
+  /* text-align: justify; */
+}
+
+.likeModify {
+  width: 90%;
+  margin: 4px auto;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+
+  /* position: absolute;
+  bottom: 15px;
+  right: 10px; */
+}
+
+.like i {
+  font-size: 20px;
+  color: red;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.like i:hover {
+  scale: 1.1;
+}
+
+.modify button {
+  margin: 0 15px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}
+
+.editBtn {
+  color: rgb(2, 213, 2);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.editBtn:hover {
+  scale: 1.1;
+  color: yellowgreen;
+}
+
+.deletBtn {
+  color: rgba(255, 0, 0, 0.664);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.deletBtn:hover {
+  scale: 1.1;
+  color: red;
+}
+
+/* Role-specific Styles */
+.superadmin {
+    border: 1px solid #fc8e4f;
+    box-shadow: 0 0 5px 1px #fc8e4f;
+}
+
+.superadmin .userName b{
+    color: #05c6c6;
+}
+
+.admin {
+    border: 1px solid #d3c654;
+    box-shadow: 0 0 5px 1px #d3c654;
+}
+
+.admin .userName b{
+    color: #f720c8f0;
+}
+
+.user {
+    border: 1px solid #93b4b5;
+    box-shadow: 0 0 5px 1px #93b4b5;
+}
+
+.user .userName b{
+    color: #d2b408;;
+}
+
+
+@media (max-width: 500px){
+  .userName {
+    font-size: 8px;
+  }
+
+  .userName b{
+    font-size: 9px;
+    font-weight: 400;
+  }
+}

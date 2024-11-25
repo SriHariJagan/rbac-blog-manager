@@ -1,0 +1,143 @@
+.container {
+    width: 100%;
+    height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profileContainer {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eaeaeac6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.564);
+    text-align: center;
+    position: relative;
+  }
+  
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .editIcon {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+
+    margin-left: 10px;
+    cursor: pointer;
+    color: #3498db;
+    font-size: 1.2rem;
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 250ms;
+  }
+
+  .editIcon:hover {
+    scale: 1.12;
+    color: #4caf50;
+  }
+  
+  .profileTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .profileTable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+    text-align: left;
+  }
+  
+  .profileTable td:first-child {
+    font-weight: bold;
+    width: 40%;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 12px 8px;
+    margin: 8px 0;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .saveButton,
+  .cancelButton {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .saveButton {
+    background-color: #4caf50;
+  }
+  
+  .cancelButton {
+    background-color: #e74c3c;
+  }
+  
+  .saveButton:hover {
+    background-color: #45a049;
+  }
+  
+  .cancelButton:hover {
+    background-color: #c0392b;
+  }
+  
+
+  .roleSection {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #bceff6;
+    border-radius: 6px;
+    color: #00796b;
+  }
+
+
+  .adminActions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+
+  @media (max-width: 500px){
+    .profileContainer {
+      width: 90%;
+    }
+  }

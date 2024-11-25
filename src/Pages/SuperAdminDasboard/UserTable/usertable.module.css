@@ -1,0 +1,109 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #eaeaea97;
+  font-weight: bold;
+  color: #333;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f0f0f070;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table select{
+  padding: 4px 2px;
+  border-radius: 4px;
+  outline-color: rgba(5, 5, 255, 0.41);
+  text-transform: capitalize;
+  text-align: center;
+  width: 100px;
+}
+
+.deleteButton, .enableButton, .disableButton{
+  background-color: rgb(255, 107, 107);
+  border: 1px solid rgb(255, 0, 0);
+  color: white;
+  padding: 6px 12px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: rgb(255, 19, 19);
+}
+
+.disableButton{
+  background-color: #3df63d;
+  border: 1px solid #00c100;
+}
+
+.disableButton:hover{
+  background-color: rgb(10, 233, 10);
+}
+
+.enableButton{
+  background-color: rgba(249, 65, 102, 0.997);
+  border: 1px solid rgb(240, 5, 52);
+}
+
+.enableButton:hover{
+  background-color: crimson;
+
+}
+
+.disableButton:disabled, .enableButton:disabled, .deleteButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  border: none;
+}
+
+.enableDisableAdmin, .rolesAdmin{
+  border: 1px solid black;
+  padding: 4px 6px;
+  font-size: 14px;
+  text-transform: capitalize;
+  border-radius: 6px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .table {
+    font-size: 14px;
+  }
+
+  .enableButton{
+    margin: 10px 0;
+  }
+
+  .deleteButton, .enableButton, .disableButton{
+    margin: 5px 0;
+  }
+
+  .deleteDisableBtns{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

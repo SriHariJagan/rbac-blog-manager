@@ -1,0 +1,23 @@
+.myPostsContainer{
+    margin: 10px auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.noPostsMessage{
+    margin: 150px auto;
+    font-size: 1.2rem;
+    color: blueviolet;
+}
+
+@media (max-width: 500px){
+    .myPostsContainer{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
