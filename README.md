@@ -27,7 +27,7 @@ An interactive Role-Based Access Control (RBAC) system built with React, designe
 - Create and edit their own blogs.
 - View posts.
 
----
+----
 
 ## 🔐 Login Details
 
@@ -43,7 +43,9 @@ An interactive Role-Based Access Control (RBAC) system built with React, designe
 - **Email:** `user@gmail.com`  
 - **Password:** `123456`  
 
----
+> **Note:** These are sample credentials for demonstration purposes. You can also create your own account through the signup page to explore the application with personalized access.
+
+----
 
 ## 🛠️ Tech Stack
 
@@ -58,12 +60,24 @@ An interactive Role-Based Access Control (RBAC) system built with React, designe
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/SriHariJagan/rbac-blog-manager.git
-   cd react-rbac-blog-manager```
+   cd react-rbac-blog-manager
 
 2. **Install dependencies::**
    ```bash
-   npm install```
+   npm install
 
 3. **Run the development server:**
    ```bash
-   npm start```
+   npm start
+
+
+
+
+
+
+
+
+
+
+
+
