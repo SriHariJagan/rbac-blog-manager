@@ -1,70 +1,107 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🛡️ **Role-Based Access Control (RBAC) Blog Manager**
 
-## Available Scripts
+An interactive **Role-Based Access Control (RBAC)** system built with **React**, designed to manage user access and permissions for a blog platform. The application leverages Firebase for authentication and Firestore for data management.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 **Features**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Role Management:** Three roles—Super Admin, Admin, and User.
+- **Blog Management:** Create, edit, delete, and view blogs with role-based permissions.
+- **User Authentication:** Secure login and role verification using **Firebase Authentication**.
+- **Real-Time Updates:** Changes made by one user are reflected in real-time for all users.
+- **Dynamic UI:** Displays role-specific views for users, admins, and super admins.
+- **Permissions:** Granular control over which users can manage, view, or edit content based on their roles.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 👤 **User Roles & Access Levels**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔹 **Super Admin**
+- **Manage users and admins**: Add, edit, delete users, and change user roles.
+- **Access to all blogs**: View and manage all posts across the platform.
+- **Create/Edit/Delete Users**: Full control over the platform’s user base.
 
-### `npm run build`
+### 🔹 **Admin**
+- **View all users and blogs**: Admins can view all users and their blogs.
+- **Edit any blog post**: Admins have the ability to modify any blog post on the platform.
+- **Moderate Content**: Admins can ensure that the content complies with platform guidelines.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔹 **User**
+- **Create and Edit Own Blogs**: Users can write, edit, and manage their own blog posts.
+- **View Own Posts**: Users can view and manage only their posts.
+- **No Admin Rights**: Cannot view or edit posts by other users.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔐 **Login Details**
 
-### `npm run eject`
+### Super Admin
+- **Email:** `superadmin@gmail.com`  
+- **Password:** `123456`  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Admin
+- **Email:** `admin@gmail.com`  
+- **Password:** `123456`  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### User
+- **Email:** `user@gmail.com`  
+- **Password:** `123456`  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> **Note:** These are sample credentials for demonstration purposes. You can also create your own account through the signup page to explore the application with personalized access.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🛠️ **Tech Stack**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Frontend:** 
+  - **React:** A JavaScript library for building user interfaces.
+  - **CSS Modules:** Scoped CSS for styling React components.
+  
+- **State Management:** 
+  - **React Context API:** For managing global state like user authentication and blog data.
+  
+- **Backend:** 
+  - **Firebase Authentication:** Secure login system with role-based access.
+  - **Firebase Firestore:** Real-time NoSQL database for storing user data and blog posts.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📦 **Setup & Installation**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/SriHariJagan/rbac-blog-manager.git
+   cd react-rbac-blog-manager
+   ```
 
-### Analyzing the Bundle Size
+2. **Install the dependencies:**
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Set up Firebase:**
+   - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+   - Obtain your Firebase config object and replace the `firebaseConfig` in the project with your credentials.
 
-### Making a Progressive Web App
+4. **Start the development server:**
+   ```bash
+   npm start
+   ```
+   Visit `http://localhost:3000` in your browser to run the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
+## 📸 **Screenshots**
 
-### Advanced Configuration
+![image](https://github.com/user-attachments/assets/c84b8a14-d78f-4afd-9d9c-a6aaebbf4733)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br />
 
-### Deployment
+![image](https://github.com/user-attachments/assets/3539a137-ca98-41bc-a098-d23c8b742803)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br />
 
-### `npm run build` fails to minify
+![image](https://github.com/user-attachments/assets/18d1627e-fc57-4ee1-b16a-61d2643f8353)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
