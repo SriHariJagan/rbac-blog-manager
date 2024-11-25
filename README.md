@@ -31,7 +31,7 @@ An interactive **Role-Based Access Control (RBAC)** system built with **React**,
 ### 🔹 **User**
 - **Create and Edit Own Blogs**: Users can write, edit, and manage their own blog posts.
 - **View Own Posts**: Users can view and manage only their posts.
-- **No Admin Rights**: Cannot view or edit posts by other users.
+- **No Admin Rights**: Cannot edit posts of other users.
 
 ---
 
@@ -92,6 +92,15 @@ An interactive **Role-Based Access Control (RBAC)** system built with **React**,
    Visit `http://localhost:3000` in your browser to run the application.
 
 ---
+
+## 🔗 Live Demo
+
+You can try out the live demo of the project here:
+
+[**Live Demo Link**](https://rbca-blogmanager.netlify.app/)
+
+---
+
 ## 📸 **Screenshots**
 
 ![image](https://github.com/user-attachments/assets/c84b8a14-d78f-4afd-9d9c-a6aaebbf4733)
