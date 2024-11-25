@@ -53,6 +53,7 @@
     width: 95%;
     border-collapse: collapse;
     margin: 20px 0;
+    overflow: hidden;
   }
   
   .profileTable td {
