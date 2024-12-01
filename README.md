@@ -19,18 +19,17 @@ An interactive **Role-Based Access Control (RBAC)** system built with **React**,
 ## 👤 **User Roles & Access Levels**
 
 ### 🔹 **Super Admin**
-- **Manage users and admins**: Add, edit, delete users, and change user roles.
+- **Manage users and admins**: Add, edit, delete Posts, and change user roles.
 - **Access to all blogs**: View and manage all posts across the platform.
-- **Create/Edit/Delete Users**: Full control over the platform’s user base.
+- **Create/Edit/Delete Posts**: Full control over the platform’s user base.
 
 ### 🔹 **Admin**
 - **View all users and blogs**: Admins can view all users and their blogs.
 - **Edit any blog post**: Admins have the ability to modify any blog post on the platform.
-- **Moderate Content**: Admins can ensure that the content complies with platform guidelines.
 
 ### 🔹 **User**
 - **Create and Edit Own Blogs**: Users can write, edit, and manage their own blog posts.
-- **View Own Posts**: Users can view and manage only their posts.
+- **View Own Posts**: Users can manage only their posts.
 - **No Admin Rights**: Cannot edit posts of other users.
 
 ---
